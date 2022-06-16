@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Practica Bucles</title>
+</head>
+<body>
+
+    <ul class="navbar">
+		<li><a href="Index.html">Página principal</a></li>
+		<li><a href="objetos.html">Tema 1: Objetos</a></li>
+		<li><a href="eventos.html">Tema 2: Eventos</a></li>
+		<li><a href="cadenas.html">Tema 3: Cadenas</a></li>
+        <li><a href="bucles.html">Tema 4: Bucles</a></li>
+	</ul>
+
+    <h2>Bucles de JavaScript</h2>
+
+    <p id="demo"></p>
+    
+    <script>
+    const bucles = ["for- recorre un bloque de código varias veces", "for/in- recorre las propiedades de un objeto", 
+    "for/of- recorre los valores de un objeto iterable", "while- recorre un bloque de código mientras una condición específica es verdadera", 
+    "do/while- también recorre un bloque de código mientras una condición específica es verdadera"];
+    let text = "";
+    for (let i = 0; i < bucles.length; i++) {
+        text += bucles[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+</html>

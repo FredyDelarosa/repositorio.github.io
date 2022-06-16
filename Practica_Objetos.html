@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="navbar">
+		<li><a href="Index.html">Página principal</a></li>
+		<li><a href="objetos.html">Tema 1: Objetos</a></li>
+		<li><a href="eventos.html">Tema 2: Eventos</a></li>
+		<li><a href="cadenas.html">Tema 3: Cadenas</a></li>
+        <li><a href="bucles.html">Tema 4: Bucles</a></li>
+	</ul>
+    
+    <h2>TEMA: CREAR OBJETOS EN JS</h2>
+
+    <p id="datos"></p>
+
+    <script>
+        const persona = {
+            nombre: "Fredy",
+            apellido: "De la rosa",
+            edad: "17",
+            colorojos: "Cafe oscuro"
+        };
+
+        document.getElementById("datos").innerHTML = persona.nombre + persona.apellido + " tiene "
+        + persona.edad + " años. ";
+    </script>
+</body>
+</html>
